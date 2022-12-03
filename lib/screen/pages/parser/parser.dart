@@ -11,9 +11,9 @@ class Parser extends StatefulWidget {
 
 class _ParserState extends State<Parser> {
   List<Pharm> pharmas = [];
+
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     getWebSiteData();
   }
@@ -50,27 +50,98 @@ class _ParserState extends State<Parser> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Scaffold(
-          body: ListView.separated(
-            separatorBuilder: (context, index) => const SizedBox(height: 20,),
-              itemCount: pharmas.length,
-              itemBuilder: ((context, index) {
-                final pharm = pharmas[index];
-                return ListTile(
-                  title: Text(pharm.title),
-                  trailing: Text(pharm.price),
-                  leading: Image.network(
-                    pharm.urlImage,
-                    width: 80,
-                    fit: BoxFit.fitHeight,
+    var size = MediaQuery.of(context);
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8),
+          child: Column(
+            children: [
+              Container(
+                width: size.size.width,
+                height: 250,
+                decoration: BoxDecoration(
+                  color: Colors.orange,
+                  borderRadius: BorderRadius.circular(16),
+                  image: DecorationImage(
+                    image: NetworkImage(
+                        "https://zarplata.kz/uploads/logo/1639113710.jpg"),
+                    fit: BoxFit.cover,
                   ),
-                );
-              }))),
+                ),
+              ),
+              Text(
+                'Садыхан» – группа компаний, начавшая свою работу в 1996 году.',
+                style: TextStyle(fontSize: 18),
+              ),
+              Container(
+                width: size.size.width,
+                height: size.size.height,
+                child: ListView.separated(
+                  physics: NeverScrollableScrollPhysics(),
+                  separatorBuilder: (context, index) => const SizedBox(
+                    height: 20,
+                  ),
+                  itemCount: pharmas.length,
+                  itemBuilder: ((context, index) {
+                    final pharm = pharmas[index];
+                    return ListTile(
+                      title: Text(pharm.title),
+                      trailing: Text(pharm.price),
+                      leading: Image.network(
+                        pharm.urlImage,
+                        width: 80,
+                        fit: BoxFit.fitHeight,
+                      ),
+                    );
+                  }),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(16),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.orange,
+                    borderRadius: BorderRadius.all(Radius.circular(16))
+                  ),
+                  width: size.size.width,
+                  child: Center(
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(vertical: 12),
+                      child: Text("Связаться", style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500
+                      ),),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
 
+//ListView.separated(
+//           separatorBuilder: (context, index) => const SizedBox(
+//             height: 20,
+//           ),
+//           itemCount: pharmas.length,
+//           itemBuilder: ((context, index) {
+//             final pharm = pharmas[index];
+//             return ListTile(
+//               title: Text(pharm.title),
+//               trailing: Text(pharm.price),
+//               leading: Image.network(
+//                 pharm.urlImage,
+//                 width: 80,
+//                 fit: BoxFit.fitHeight,
+//               ),
+//             );
+//           }),
+//         ),
 class Pharm {
   final String price;
   final String title;

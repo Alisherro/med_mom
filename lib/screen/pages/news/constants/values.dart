@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../pharmacy/pharmacy.dart';
+import '../../parser/parser.dart';
 import '../models/category.dart';
 import '../models/news.dart';
 import '../models/posts.dart';
@@ -140,35 +140,35 @@ class StaticValues {
         '+7 707 349 49 49',
         'Лекарственные средства, ИМН, Доставка 24/7',
         ' 5/5 звезд',
-        PharmacyScreen()),
+        Parser()),
     Post(
         'assets/images/apteka1.jpg',
         "Садыхан",
         '+7 707 349 49 49',
         'Лекарственные средства, ИМН, Доставка 24/7',
         ' 5/5 звезд',
-        PharmacyScreen()),
+        Parser()),
     Post(
         'assets/images/apteka1.jpg',
         "Садыхан",
         '+7 707 349 49 49',
         'Лекарственные средства, ИМН, Доставка 24/7',
         ' 5/5 звезд',
-        PharmacyScreen()),
+        Parser()),
     Post(
         'assets/images/apteka1.jpg',
         "Садыхан",
         '+7 707 349 49 49',
         'Лекарственные средства, ИМН, Доставка 24/7',
         ' 5/5 звезд',
-        PharmacyScreen()),
+        Parser()),
     Post(
         'assets/images/apteka1.jpg',
         "Садыхан",
         '+7 707 349 49 49',
         'Лекарственные средства, ИМН, Доставка 24/7',
         ' 5/5 звезд',
-        PharmacyScreen()),
+        Parser()),
   ];
 
   static List<Post> kindergartens = [
