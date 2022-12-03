@@ -15,7 +15,7 @@ class WelcomeWidget extends StatelessWidget {
             style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400),
             
           ),
-          Text("Иследуй мир за один клик!")
+          Text("Обучение, не вылезая из утробы!")
         ],
       ),
     );

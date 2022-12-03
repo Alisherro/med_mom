@@ -39,20 +39,22 @@ class NewsViewPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Align(
-                alignment: Alignment.topLeft,
-                child: GestureDetector(
-                  onTap: () {
-                    Navigator.pop(context);
-                  },
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(10)),
-                    padding: const EdgeInsets.all(5),
-                    margin: const EdgeInsets.only(top: 30, left: 10),
-                    child: const Icon(
-                      Icons.arrow_back,
+              SafeArea(
+                child: Align(
+                  alignment: Alignment.topLeft,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10)),
+                      padding: const EdgeInsets.all(5),
+                      margin: const EdgeInsets.only(top: 30, left: 10),
+                      child: const Icon(
+                        Icons.arrow_back,
+                      ),
                     ),
                   ),
                 ),

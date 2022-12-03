@@ -15,7 +15,7 @@ class SearchBar extends StatelessWidget {
                 color: Colors.grey,
               ),
               border: InputBorder.none,
-              hintText: "Поиск новостей",
+              hintText: "Поиск ",
               filled: true,
               fillColor: Colors.grey[200])),
     );

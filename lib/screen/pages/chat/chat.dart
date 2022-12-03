@@ -34,9 +34,9 @@ class _ChatState extends State<Chat> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            'Общайтесь с друзьями!',
+            'Общайтесь с мамочками!',
             style: TextStyle(
-                fontSize: 28, color: Colors.white),
+                fontSize: 24, color: Colors.white),
           ),
           Row(
             children: [

@@ -13,7 +13,7 @@ class NavigationBarPage extends StatefulWidget {
 class _NavigationBarPageState extends State<NavigationBarPage> {
   int currentindex = 0;
   List<Widget> screens = [
-    const News(),
+     News(),
     const Chat(),
     const Profile(),
   ];

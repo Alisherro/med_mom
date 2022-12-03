@@ -11,7 +11,7 @@ class TopBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Expanded(flex: 6, child: SearchBar()),
+        const Expanded( child: SearchBar()),
         const SizedBox(
           width: 10,
         ),

@@ -15,25 +15,27 @@ class _ProfileState extends State<Profile> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-           Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text('Как себя чувствуете?', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400), ),
-                      Container(
-                          padding: const EdgeInsets.all(10.0),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(12.0),
-                              color: Colors.blue[300]),
-                          child: const Icon(Icons.person, color: Colors.white))
-                    ],
-                  ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  'Как себя чувствуете?',
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400),
                 ),
+                Container(
+                    padding: const EdgeInsets.all(10.0),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12.0),
+                        color: Colors.blue[300]),
+                    child: const Icon(Icons.person, color: Colors.white))
+              ],
+            ),
+          ),
           Container(
             child: Column(
               children: [
-               
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Container(
@@ -49,7 +51,8 @@ class _ProfileState extends State<Profile> {
                             width: 100,
                             decoration: const BoxDecoration(
                               image: DecorationImage(
-                                image: ExactAssetImage('assets/images/psyc.png'),
+                                image:
+                                    ExactAssetImage('assets/images/psyc.png'),
                                 fit: BoxFit.fitHeight,
                               ),
                             ),
@@ -82,7 +85,8 @@ class _ProfileState extends State<Profile> {
                                     ),
                                     child: const Center(
                                       child: Text("Консультация",
-                                          style: TextStyle(color: Colors.white)),
+                                          style:
+                                              TextStyle(color: Colors.white)),
                                     ))
                               ],
                             ),
@@ -128,7 +132,8 @@ class _ProfileState extends State<Profile> {
                                     ),
                                     child: const Center(
                                       child: Text("Позвонить",
-                                          style: TextStyle(color: Colors.white)),
+                                          style:
+                                              TextStyle(color: Colors.white)),
                                     ))
                               ],
                             ),
@@ -139,7 +144,8 @@ class _ProfileState extends State<Profile> {
                             width: 100,
                             decoration: const BoxDecoration(
                               image: DecorationImage(
-                                image: ExactAssetImage('assets/images/call.png'),
+                                image:
+                                    ExactAssetImage('assets/images/call.png'),
                                 fit: BoxFit.fitHeight,
                               ),
                             ),
@@ -162,21 +168,26 @@ class _ProfileState extends State<Profile> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                     const Text(
-                      "Купите премиум для использования всех функции этого приложения!", textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 17.0, ),
+                    const Text(
+                      "Начались роды?",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 17.0,
+                      ),
                     ),
-                   const SizedBox(height: 8,),
+                    const SizedBox(
+                      height: 8,
+                    ),
                     Container(
-                              padding: const EdgeInsets.all(12),
-                              decoration: BoxDecoration(
-                                color: Colors.blue[700],
-                                borderRadius: BorderRadius.circular(12.0),
-                              ),
-                              child: const Center(
-                                child: Text("Купить",
-                                    style: TextStyle(color: Colors.white)),
-                              ))
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Colors.blue[700],
+                          borderRadius: BorderRadius.circular(12.0),
+                        ),
+                        child: const Center(
+                          child: Text("ДААА",
+                              style: TextStyle(color: Colors.white)),
+                        ))
                   ],
                 )),
           ),
