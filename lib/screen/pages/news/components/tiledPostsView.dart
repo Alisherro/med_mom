@@ -26,58 +26,63 @@ class TiledNewsView extends StatelessWidget {
         data.length,
         (index) {
           Post post = data[index];
-          return Container(
-            margin: EdgeInsets.symmetric(vertical: 5),
-            padding: EdgeInsets.all(5),
-            decoration: BoxDecoration(
-                color: Colors.grey[200],
-                borderRadius: BorderRadius.circular(10)),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                ClipRRect(
-                  child: Image.asset(
-                    post.image,
-                    width: 100,
-                    height: 100,
-                    fit: BoxFit.cover,
+          return GestureDetector(
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>post.widget));
+            },
+            child: Container(
+              margin: EdgeInsets.symmetric(vertical: 5),
+              padding: EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(10)),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  ClipRRect(
+                    child: Image.asset(
+                      post.image,
+                      width: 100,
+                      height: 100,
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          child: Text(
-                            post.title
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            child: Text(
+                              post.title
+                            ),
                           ),
-                        ),
-                        SizedBox(height: 5,),
-                        Text(
-                          getTruncatedTitle( post.secondTitle,30),
-                          style: TextStyle(
-                              fontSize: 13, color: Colors.grey[700]),
-                        ),
-                        SizedBox(height: 2,),
-                        Text(
-                          getTruncatedTitle(post.thirdTitle, 60),
-                          style: TextStyle(
-                              fontSize: 13, color: Colors.grey[700]),
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                           Text( post.endText)
-                          ],
-                        )
-                      ],
+                          SizedBox(height: 5,),
+                          Text(
+                            getTruncatedTitle( post.secondTitle,30),
+                            style: TextStyle(
+                                fontSize: 13, color: Colors.grey[700]),
+                          ),
+                          SizedBox(height: 2,),
+                          Text(
+                            getTruncatedTitle(post.thirdTitle, 60),
+                            style: TextStyle(
+                                fontSize: 13, color: Colors.grey[700]),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            children: [
+                             Text( post.endText)
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           );
         },

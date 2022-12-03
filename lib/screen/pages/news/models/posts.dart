@@ -1,8 +1,13 @@
-class Post{
-  final String title;
-  final String secondTitle;
-  final String thirdTitle;
-  final String image;
-  final String endText;
-  Post(this.image, this.title, this.secondTitle,this.thirdTitle, this.endText);
+import 'package:flutter/cupertino.dart';
+
+class Post {
+  String title;
+  String secondTitle;
+  String thirdTitle;
+  String image;
+  String endText;
+  Widget widget;
+
+  Post(this.image, this.title, this.secondTitle, this.thirdTitle, this.endText,
+      this.widget);
 }

@@ -12,13 +12,13 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SingleChildScrollView(
-      child: Container(
-        constraints: BoxConstraints(
-            maxHeight: MediaQuery.of(context).size.height,
-            maxWidth: MediaQuery.of(context).size.width),
-        decoration: BoxDecoration(color: Colors.blue[300]),
-        child: Column(
+      body: SingleChildScrollView(
+        child: Container(
+          constraints: BoxConstraints(
+              maxHeight: MediaQuery.of(context).size.height,
+              maxWidth: MediaQuery.of(context).size.width),
+          decoration: BoxDecoration(color: Colors.blue[300]),
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -167,8 +167,10 @@ class _LoginState extends State<Login> {
                   ),
                 ),
               )
-            ]),
+            ],
+          ),
+        ),
       ),
-    ));
+    );
   }
 }
