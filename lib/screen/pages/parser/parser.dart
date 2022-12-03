@@ -101,7 +101,7 @@ class _ParserState extends State<Parser> {
                 padding: EdgeInsets.all(16),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.orange,
+                    color: Colors.blue[200],
                     borderRadius: BorderRadius.all(Radius.circular(16))
                   ),
                   width: size.size.width,
@@ -124,24 +124,6 @@ class _ParserState extends State<Parser> {
   }
 }
 
-//ListView.separated(
-//           separatorBuilder: (context, index) => const SizedBox(
-//             height: 20,
-//           ),
-//           itemCount: pharmas.length,
-//           itemBuilder: ((context, index) {
-//             final pharm = pharmas[index];
-//             return ListTile(
-//               title: Text(pharm.title),
-//               trailing: Text(pharm.price),
-//               leading: Image.network(
-//                 pharm.urlImage,
-//                 width: 80,
-//                 fit: BoxFit.fitHeight,
-//               ),
-//             );
-//           }),
-//         ),
 class Pharm {
   final String price;
   final String title;
