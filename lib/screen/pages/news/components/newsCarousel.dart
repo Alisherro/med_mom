@@ -18,7 +18,7 @@ class NewsCarousel extends StatelessWidget {
         return Builder(
           builder: (BuildContext context) {
             return GestureDetector(
-              onTap: (){
+              onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
@@ -56,15 +56,16 @@ class NewsCarousel extends StatelessWidget {
                           borderRadius: BorderRadius.circular(20)),
                     ),
                     Align(
-                        alignment: Alignment.bottomCenter,
-                        child: Container(
-                          padding: const EdgeInsets.all(20),
-                          child: Text(
-                            news.title,
-                            style: const TextStyle(
-                                fontSize: 15, color: Colors.white),
-                          ),
-                        ))
+                      alignment: Alignment.bottomCenter,
+                      child: Container(
+                        padding: const EdgeInsets.all(20),
+                        child: Text(
+                          getTruncatedTitle(news.title, 100),
+                          style: const TextStyle(
+                              fontSize: 14, color: Colors.white),
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),
@@ -74,4 +75,10 @@ class NewsCarousel extends StatelessWidget {
       }).toList(),
     );
   }
+}
+
+String getTruncatedTitle(String actualString, int maxLetters) {
+  return actualString.length > maxLetters
+      ? actualString.substring(0, maxLetters) + "..."
+      : actualString;
 }
