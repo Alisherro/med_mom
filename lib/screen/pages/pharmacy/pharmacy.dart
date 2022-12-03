@@ -79,38 +79,3 @@ class PharmacyScreen extends StatelessWidget {
   }
 }
 
-//class PharmacyScreen extends StatelessWidget {
-//   const PharmacyScreen({Key? key}) : super(key: key);
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     var size = MediaQuery.of(context).size;
-//     return Scaffold(
-//       body: Container(
-//         width: size.width,
-//         child: ListView(
-//             children: [
-//               Container(
-//                 width: size.width,
-//                 height: 250,
-//                 decoration: BoxDecoration(
-//                     color: Colors.orange,
-//                     borderRadius: BorderRadius.circular(16),
-//                     image: DecorationImage(
-//                       image: NetworkImage(
-//                           "https://zarplata.kz/uploads/logo/1639113710.jpg"),
-//                       fit: BoxFit.cover,
-//                     )),
-//               ),
-//               SizedBox(
-//                 height: 15,
-//               ),
-//               Text(
-//                   '«Садыхан» – группа компаний, начавшая свою работу в 1996 году.'),
-//               SizedBox(height: 20),
-//             ],
-//           ),
-//       ),
-//     );
-//   }
-// }

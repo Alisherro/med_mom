@@ -34,7 +34,7 @@ class _NewsState extends State<News> {
                   padding: const EdgeInsets.all(10),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children:  [
                       TopBar(),
                       SizedBox(height: 20),
                       WelcomeWidget(),
