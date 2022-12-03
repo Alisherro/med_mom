@@ -25,10 +25,10 @@ class News extends StatelessWidget {
                     padding: const EdgeInsets.all(10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const TopBar(),
-                        const SizedBox(height: 20),
-                        const WelcomeWidget(),
+                      children: const [
+                         TopBar(),
+                         SizedBox(height: 20),
+                         WelcomeWidget(),
                       ],
                     ),
                   ),

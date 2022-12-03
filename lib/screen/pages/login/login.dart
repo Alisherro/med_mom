@@ -17,7 +17,7 @@ class _LoginState extends State<Login> {
         constraints: BoxConstraints(
             maxHeight: MediaQuery.of(context).size.height,
             maxWidth: MediaQuery.of(context).size.width),
-        decoration:  BoxDecoration(color: Colors.blue[300]),
+        decoration: BoxDecoration(color: Colors.blue[300]),
         child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,

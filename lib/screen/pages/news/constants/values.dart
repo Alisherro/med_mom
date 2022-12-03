@@ -37,19 +37,22 @@ class StaticValues {
 
   List<Category> categories = [
     Category(
-      name: "Новости",
+      name: "Врачи",
     ),
     Category(
-      name: "Статьи",
+      name: "Мед. клиники",
     ),
     Category(
-      name: "Интересное",
+      name: "Аптеки",
     ),
     Category(
-      name: "Казахстан",
+      name: "Детсады",
     ),
     Category(
-      name: "Акции",
+      name: "Няни",
+    ),
+    Category(
+      name: "Детские курсы",
     ),
   ];
 }

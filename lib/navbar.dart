@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'screen/pages/news/pages/home.dart';
 import 'screen/pages/chat/chat.dart';
 import 'screen/pages/profile/profile.dart';
@@ -27,8 +26,8 @@ class _NavigationBarPageState extends State<NavigationBarPage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         elevation: 0,
-        selectedItemColor: Colors.blue[700],
-        unselectedItemColor: Colors.white,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.blue[700],
         backgroundColor: Colors.blue[200],
         showSelectedLabels: false,
         showUnselectedLabels: false,
@@ -41,7 +40,7 @@ class _NavigationBarPageState extends State<NavigationBarPage> {
               label: "",
               backgroundColor: Colors.transparent),
           BottomNavigationBarItem(
-              icon: Icon(Icons.favorite_rounded),
+              icon: Icon(Icons.messenger),
               label: "",
               backgroundColor: Colors.transparent),
           BottomNavigationBarItem(
