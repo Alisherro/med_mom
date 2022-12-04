@@ -16,6 +16,7 @@ class TiledNewsView extends StatelessWidget {
     StaticValues.pharmacies,
     StaticValues.kindergartens,
     StaticValues.nannies,
+    StaticValues.items,
   ];
 
   @override
